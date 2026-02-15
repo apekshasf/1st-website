@@ -81,6 +81,33 @@ h2 {
     margin: 20px 0;
 }
 
+/* About Section */
+#about p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f6f1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d4a574;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+.contact-info strong {
+    color: #6b4423;
+    font-size: 1.1em;
+}
+
 /* Responsive Images */
 img {
     max-width: 100%;
