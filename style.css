@@ -94,7 +94,6 @@ h2 {
 .hero {
     text-align: center;
     background: linear-gradient(135deg, #f9f6f1 0%, #e8dcc8 100%);
-    border-left: none;
     border: 2px solid #d4a574;
 }
 
