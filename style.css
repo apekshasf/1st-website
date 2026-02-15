@@ -288,6 +288,14 @@ footer p {
         font-size: 1.5em;
     }
     
+    section {
+        padding: 15px;
+    }
+    
+    .hero h2 {
+        font-size: 1.5em;
+    }
+    
     .menu-list li {
         flex-direction: column;
         align-items: flex-start;
@@ -295,5 +303,13 @@ footer p {
     
     .item-price {
         margin-top: 5px;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    .contact-info p {
+        font-size: 0.95em;
     }
 }
