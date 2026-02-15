@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Menu - The Cozy Bean</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu and reservations for The Cozy Bean Cafe">
+    <title>Our Menu - The Cozy Bean Cafe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Our Menu</h1>
+        <h1>The Cozy Bean Cafe</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,26 +19,52 @@
     </header>
 
     <main>
-        <h2>Coffee & Drinks</h2>
-        <ul>
-            <li>Espresso - $3.00</li>
-            <li>Cappuccino - $4.50</li>
-            <li>Iced Latte - $5.00</li>
-        </ul>
+        <section class="menu-section">
+            <h2>Coffee & Drinks</h2>
+            <ul class="menu-list">
+                <li><span class="item-name">Espresso</span> <span class="item-price">$3.00</span></li>
+                <li><span class="item-name">Cappuccino</span> <span class="item-price">$4.50</span></li>
+                <li><span class="item-name">Iced Latte</span> <span class="item-price">$5.00</span></li>
+                <li><span class="item-name">Americano</span> <span class="item-price">$3.50</span></li>
+                <li><span class="item-name">Mocha</span> <span class="item-price">$5.00</span></li>
+            </ul>
+        </section>
 
-        <h2>Reservations</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <section class="reservation-section">
+            <h2>Make a Reservation</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date"><br><br>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
 
-            <label for="request">Special Requests:</label><br>
-            <textarea id="request" rows="4" cols="30"></textarea><br><br>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
 
-            <input type="submit" value="Book Table">
-        </form>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" value="2">
+                </div>
+
+                <div class="form-group">
+                    <label for="request">Special Requests:</label>
+                    <textarea id="request" name="request" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Book Table</button>
+            </form>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 The Cozy Bean Cafe</p>
+    </footer>
 </body>
 </html>
