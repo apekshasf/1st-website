@@ -8,6 +8,22 @@ body {
     color: #333;
 }
 
+/* Skip to main content link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #6b4423;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /* Header and Navigation */
 header {
     background: linear-gradient(135deg, #6b4423 0%, #4a2f1a 100%);
@@ -61,6 +77,9 @@ main {
 
 section {
     margin-bottom: 30px;
+    padding: 20px;
+    border-left: 4px solid #d4a574;
+    background-color: #ffffff;
 }
 
 h2 {
@@ -68,11 +87,21 @@ h2 {
     border-bottom: 2px solid #d4a574;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
+    background: linear-gradient(135deg, #f9f6f1 0%, #e8dcc8 100%);
+    border-left: none;
+    border: 2px solid #d4a574;
+}
+
+.hero h2 {
+    color: #4a2f1a;
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
 .hero p {

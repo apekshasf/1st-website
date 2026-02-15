@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>The Cozy Bean Cafe</h1>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Our Menu</a></li>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <section class="menu-section">
             <h2>Coffee & Drinks</h2>
             <ul class="menu-list">
@@ -45,30 +45,30 @@
 
         <section class="reservation-section">
             <h2>Make a Reservation</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" aria-labelledby="reservation-heading">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required aria-required="true">
                 </div>
 
                 <div class="form-group">
                     <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" required>
+                    <input type="date" id="date" name="date" required aria-required="true">
                 </div>
 
                 <div class="form-group">
                     <label for="time">Time:</label>
-                    <input type="time" id="time" name="time" required>
+                    <input type="time" id="time" name="time" required aria-required="true">
                 </div>
 
                 <div class="form-group">
                     <label for="guests">Number of Guests:</label>
-                    <input type="number" id="guests" name="guests" min="1" max="10" value="2">
+                    <input type="number" id="guests" name="guests" min="1" max="10" value="2" aria-label="Number of guests (1-10)">
                 </div>
 
                 <div class="form-group">
                     <label for="request">Special Requests:</label>
-                    <textarea id="request" name="request" rows="4"></textarea>
+                    <textarea id="request" name="request" rows="4" aria-label="Special requests or dietary restrictions"></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">Book Table</button>
@@ -76,7 +76,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2024 The Cozy Bean Cafe</p>
     </footer>
 </body>
