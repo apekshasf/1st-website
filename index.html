@@ -9,9 +9,9 @@
 </head>
 <body>
 
-    <header>
+    <header role="banner">
         <h1>The Cozy Bean Cafe</h1>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Our Menu</a></li>
@@ -19,7 +19,7 @@
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <section class="hero">
             <h2>Welcome to The Cozy Bean</h2>
             <p>We serve the best organic coffee and fresh pastries in town. Come relax in our welcoming atmosphere and enjoy handcrafted beverages made with care.</p>
@@ -44,9 +44,24 @@
                 </tr>
             </table>
         </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Founded in 2020, The Cozy Bean Cafe has been serving the community with passion and dedication. We source our beans from sustainable farms and roast them fresh daily to ensure the perfect cup every time.</p>
+            <p>Our friendly baristas are trained in the art of coffee making, and we pride ourselves on creating a warm, welcoming environment where everyone feels at home.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong><br>123 Main Street<br>Anytown, ST 12345</p>
+                <p><strong>Phone:</strong><br>(555) 123-4567</p>
+                <p><strong>Email:</strong><br>info@cozybeancafe.com</p>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2024 The Cozy Bean Cafe</p>
     </footer>
 
